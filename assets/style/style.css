@@ -1,0 +1,47 @@
+/* BASIC STYLES HERE */
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 4rem;
+  font-size: 3rem;
+}
+
+/* #region colors */
+.color {
+  display: flex;
+  justify-content: center;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+}
+
+.orange {
+  color: orange;
+}
+
+.purple {
+  color: purple;
+}
+
+.red {
+  color: red;
+}
+
+/* #endregion */
+
+.createListForm {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.grey {
+  background-color: rgba(156, 161, 204, 0.881);
+}
