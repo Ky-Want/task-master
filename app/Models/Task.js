@@ -14,6 +14,7 @@ export class Task {
             <p class="px-2 mb-1">
             <input onchange="app.tasksController.toggleTask('${this.id}')" class="ms-2" type="checkbox" ${this.task ? 'checked' : ''}>
 
+            // NOTE/TODO: make the description required so that blank tasks aren't entered
             ${this.description}
 
             </p>
@@ -21,5 +22,3 @@ export class Task {
             </div>`
   }
 }
-
-// ${this.description}
