@@ -7,7 +7,7 @@ class ListsService {
     let lists = appState.lists.filter(l => l.id != listId);
     appState.lists = lists
     saveState('lists', appState.lists)
-    window.confirm("Are you sure you want to delete this list?")
+
   }
 
   createList(newList) {
