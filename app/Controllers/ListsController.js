@@ -36,7 +36,6 @@ export class ListsController {
 
 
   deleteList(listId) {
-    // TODO Apply to tasks too
     if (window.confirm("Are you sure you want to delete this list?")) {
       listsService.deleteList(listId)
     }

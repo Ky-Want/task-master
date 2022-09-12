@@ -7,8 +7,8 @@ class ListsService {
     let lists = appState.lists.filter(l => l.id != listId);
     appState.lists = lists
     saveState('lists', appState.lists)
-
   }
+
 
   createList(newList) {
     let list = new List(newList)
