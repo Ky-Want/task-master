@@ -36,10 +36,9 @@ export class ListsController {
 
 
   deleteList(listId) {
-    try {
+    // TODO Apply to tasks too
+    if (window.confirm("Are you sure you want to delete this list?")) {
       listsService.deleteList(listId)
-    } catch (error) {
-      console.log(error);
     }
   }
 }

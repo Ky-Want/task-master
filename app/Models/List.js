@@ -1,4 +1,3 @@
-
 import { appState } from "../AppState.js"
 import { generateId } from "../Utils/generateId.js"
 
@@ -11,11 +10,11 @@ export class List {
   }
 
   get Template() {
-    return /*html*/` 
+    return /*html*/`
   <div class="col-12 col-md-4 p-2">
     <div class="elevation-5 rounded">
-      <div class="p-2 rounded-top d-flex ${this.color}">
-        <div class="d-flex flex-column w-100 justify-content-center">
+      <div class="p-2 rounded-top d-flex">
+        <div class="d-flex flex-column w-100 justify-content-center" style="background-color:${this.color}">
           <i class="fa-solid fa-circle-xmark fs-4 p-2" onclick="app.listsController.deleteList('${this.id}')"></i>
           <div class="d-flex justify-content-center flex-wrap">
           </div>

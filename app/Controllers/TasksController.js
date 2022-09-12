@@ -1,4 +1,3 @@
-
 import { tasksService } from "../Services/TasksService.js"
 import { getFormData } from "../Utils/FormHandler.js"
 
@@ -19,10 +18,14 @@ export class TasksController {
 
 
   deleteTask(taskId) {
-    try {
+    if (window.confirm("Are you sure you want to delete this task?")) {
       tasksService.deleteTask(taskId)
-    } catch (error) {
-      console.log(error);
     }
+  }
+
+
+
+  toggleTask(id) {
+    tasksService.toggleTask(id)
   }
 }

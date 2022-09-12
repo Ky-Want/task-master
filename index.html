@@ -30,8 +30,9 @@
       <div class="row mb-5 ms-3">
         <div class="col-md">
           <div class="form-floating">
+            <!-- add required to forms -->
             <input maxlength="15" minlength="3" type="text" class="form-control border border-dark" id="name"
-              name="name" placeholder="List Name">
+              name="name" required placeholder="List Name">
             <label for="floatingInputGrid">List Name</label>
           </div>
         </div>
@@ -39,7 +40,8 @@
         <div class="col-md">
           <select class="form-select border border-dark" name="color">
             <option selected>Colors:</option>
-            <option value="1" class="blue">Blue</option>
+            <!-- NOTE fix the values on each of these dropdowns -->
+            <option value="blue" class="blue">Blue</option>
             <option value="2" class="orange">Orange</option>
             <option value="3" class="green">Green</option>
             <option value="4" class="red">Red</option>

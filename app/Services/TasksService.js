@@ -4,6 +4,19 @@ import { Task } from "../Models/Task.js"
 import { saveState } from "../Utils/Store.js";
 
 class TasksService {
+  toggleTask(id) {
+    let task = appState.tasks.find(task => task.id == id)
+    if (!task) {
+      throw new Error('Bad ID')
+    }
+    task.task = !task.task
+    appState.emit('tasks')
+    saveState('tasks', appState.tasks)
+  }
+
+
+
+
   deleteTask(taskId) {
     let tasks = appState.tasks.filter(t => t.id != taskId);
     appState.tasks = tasks
